@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="app" aria-live="polite">
+      <section class="screen screen-active intro-screen" id="introScreen">
+        <div class="aurora" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="sky">
+          <span class="sparkle sparkle-one"></span>
+          <span class="sparkle sparkle-two"></span>
+          <span class="sparkle sparkle-three"></span>
+          <span class="moon"></span>
+          <span class="shooting-star"></span>
+          <span class="shooting-star shooting-star-late"></span>
+        </div>
+
+        <div class="intro-content">
+          <div class="gift-stack" aria-hidden="true">
+            <span class="gift gift-left"></span>
+            <span class="gift gift-center"></span>
+            <span class="gift gift-right"></span>
+          </div>
+          <p class="kicker">Một món quà nhỏ</p>
+          <h1>Happy Birthday, <span data-name>người đặc biệt của anh</span>!</h1>
+          <p class="type-line" id="typeLine"></p>
+          <button class="primary-action" id="startButton" type="button">
+            Mở lời chúc
+          </button>
+        </div>
+      </section>
+
+      <section class="screen letter-screen" id="letterScreen">
+        <div class="letter-scene">
+          <p class="kicker">Có một bức thư dành riêng cho ngày của emmm</p>
+
+          <button class="envelope" id="envelopeButton" type="button" aria-label="Mở bức thư">
+            <span class="envelope-back"></span>
+            <span class="letter-paper" id="letterPaper">
+              <span class="paper-shine"></span>
+              <span class="letter-heading">Gửi <span data-name>bạn</span>,</span>
+              <span class="letter-message" id="letterMessage"></span>
+              <span class="letter-sign">Từ một người luôn mong bạn vui.</span>
+            </span>
+            <span class="envelope-front"></span>
+            <span class="envelope-flap"></span>
+            <span class="wax-seal">HB</span>
+          </button>
+          <p class="open-hint">Chạm vào phong bì để mở thư nhen</p>
+
+          <div class="heart-burst" id="heartBurst" aria-hidden="true"></div>
+
+          <button class="secondary-action hidden" id="celebrateButton" type="button">
+            Xem điều bất ngờ
+          </button>
+        </div>
+      </section>
+
+      <section class="screen party-screen" id="partyScreen">
+        <canvas class="confetti-canvas" id="confettiCanvas"></canvas>
+        <div class="spotlight" aria-hidden="true"></div>
+
+        <div class="balloons" aria-hidden="true">
+          <span class="balloon red"></span>
+          <span class="balloon teal"></span>
+          <span class="balloon yellow"></span>
+          <span class="balloon violet"></span>
+        </div>
+
+        <div class="party-content">
+          <p class="kicker">Điều ước hôm nay</p>
+          <h2>Chúc mừng sinh nhật, <span data-name>em yêuuu</span>!</h2>
+          <div class="cake" aria-hidden="true">
+            <span class="sparkler"></span>
+            <span class="candle candle-left"></span>
+            <span class="candle candle-right"></span>
+            <span class="cake-top"></span>
+            <span class="cake-body"></span>
+            <span class="cake-plate"></span>
+          </div>
+          <p id="finalWish"></p>
+          <button class="primary-action" id="replayButton" type="button">Xem lại bức thư</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
