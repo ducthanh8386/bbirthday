@@ -1,10 +1,10 @@
 const CONFIG = {
-  defaultName: "người đặc biệt",
-  introText: "Hôm nay có một điều nhỏ xinh muốn nói với bạn. Nhấn mở thư nhé.",
+  defaultName: "em yêu",
+  introText: "Hôm nay có một điều nhỏ xinh muốn nói với em. Em nhấn mở thư nhé!",
   letterText:
-    "Chúc bạn tuổi mới thật nhiều bình yên, luôn được yêu thương theo cách dịu dàng nhất, và có đủ can đảm để theo đuổi những điều khiến trái tim mình sáng lên.",
+    "Chúc em tuổi mới luôn xinh đẹp, học tập chăm chỉ hơn nha.\nMột vài tháng nữa thôi em sang Trung rồi, sang đấy giữ sức khỏe và phải ăn uống đầy đủ đấy nha.\nChúc em sang tuổi mới trưởng thành hơn và phải thật hạnh phúc em nhé.",
   finalText:
-    "Mong ngày hôm nay của bạn đầy tiếng cười, có bánh ngon, có người thương ở cạnh, và có thật nhiều khoảnh khắc để sau này nhớ lại vẫn thấy ấm lòng.",
+    "Ước đi ròi thổi nến em nhá hehe\nAnh ước chúng mình sẽ bên nhau thêm nhiều nhiều năm về sauuuu",
 };
 
 const params = new URLSearchParams(window.location.search);

@@ -390,16 +390,16 @@ h2 {
 .letter-paper {
   left: 0;
   right: 0;
-  width: 80%;
-  min-height: 86%;
+  width: 88%;
+  min-height: 122%;
   margin: 0 auto;
-  bottom: 11%;
+  bottom: 7%;
   border-radius: 8px;
   background:
     linear-gradient(transparent 95%, rgba(200, 63, 91, 0.13) 96%) 0 0 / 100% 32px,
     var(--paper);
   box-shadow: var(--shadow);
-  padding: 28px 26px;
+  padding: 24px 26px;
   text-align: left;
   opacity: 0;
   transform: translateY(122px) scale(0.98);
@@ -435,7 +435,7 @@ h2 {
 
 .envelope.open .letter-paper {
   opacity: 1;
-  transform: translateY(-122px) scale(1);
+  transform: translateY(-184px) scale(1);
 }
 
 .envelope.open .letter-paper > :not(.paper-shine) {
@@ -493,15 +493,16 @@ h2 {
 
 .letter-message {
   color: #4e3838;
-  font-size: clamp(0.98rem, 2.5vw, 1.15rem);
-  line-height: 1.6;
+  font-size: clamp(0.9rem, 2vw, 1.02rem);
+  line-height: 1.48;
+  white-space: pre-line;
 }
 
 .letter-sign {
-  margin-top: 18px;
+  margin-top: 14px;
   color: #8a5c5c;
   font-family: "Pacifico", cursive;
-  font-size: 1.12rem;
+  font-size: 1.08rem;
 }
 
 .open-hint {
@@ -909,7 +910,9 @@ h2 {
   }
 
   .letter-paper {
-    padding: 22px 20px;
+    width: 90%;
+    min-height: 126%;
+    padding: 20px 18px;
   }
 
   .wax-seal {
@@ -919,7 +922,7 @@ h2 {
   }
 
   .envelope.open .letter-paper {
-    transform: translateY(-106px) scale(1);
+    transform: translateY(-146px) scale(1);
   }
 
   .party-content {
